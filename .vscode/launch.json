@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TransaksiApplication<transaksi>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ui.ft.ccit.faculty.transaksi.TransaksiApplication",
+            "projectName": "transaksi",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
