@@ -91,18 +91,20 @@ CREATE TABLE IF NOT EXISTS `pelanggan` (
   `telepon` varchar(15) DEFAULT NULL,
   `tgl_lahir` date NOT NULL,
   `jenis_pelanggan` char(1) NOT NULL DEFAULT 'S',
+  `gmail` varchar(50) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_pelanggan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-INSERT IGNORE INTO `pelanggan` (`id_pelanggan`, `nama`, `jenis_kelamin`, `alamat`, `telepon`, `tgl_lahir`, `jenis_pelanggan`) VALUES
-('P001', 'Andi', 'L', 'Jl. Sukarno Hatta No.80', '08159132629', '1984-07-16', 'S'),
-('P002', 'Susanto', 'L', 'Jl. P. Sudirman No.9', '08189596566', '1983-07-11', 'G'),
-('P003', 'Susanti', 'L', 'Jl. Hayam Wuruk No.9A', '08171122222', '1982-08-02', 'G'),
-('P004', 'Anton', 'L', 'Jl. Kebon Jeruk No.9B', '08171122223', '1980-06-12', 'S'),
-('P005', 'Bobby', 'L', 'Jl. Kebon Sirih No. 80', '081310202326', '1983-05-01', 'G'),
-('P006', 'Charles', 'L', 'Jl. P. Diponegoro No. 89', '081399919232', '1980-04-12', 'G'),
-('P007', 'Merry', 'P', 'Jl. Kaliurang KM. 6 No. 80', '08125656989', '1978-05-16', 'G'),
-('P008', 'Meiliana', 'P', 'Jl. Sukarno Hatta No. 78B', '08164918722', '1986-04-04', 'S');
+INSERT IGNORE INTO `pelanggan` (`id_pelanggan`, `nama`, `jenis_kelamin`, `alamat`, `telepon`, `tgl_lahir`, `jenis_pelanggan`, `gmail`, `password`) VALUES
+('P001', 'Andi', 'L', 'Jl. Sukarno Hatta No.80', '08159132629', '1984-07-16', 'S', 'andi@gmail.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
+('P002', 'Susanto', 'L', 'Jl. P. Sudirman No.9', '08189596566', '1983-07-11', 'G', 'susanto@gmail.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
+('P003', 'Susanti', 'L', 'Jl. Hayam Wuruk No.9A', '08171122222', '1982-08-02', 'G', 'susanti@gmail.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
+('P004', 'Anton', 'L', 'Jl. Kebon Jeruk No.9B', '08171122223', '1980-06-12', 'S', 'anton@gmail.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
+('P005', 'Bobby', 'L', 'Jl. Kebon Sirih No. 80', '081310202326', '1983-05-01', 'G', 'bobby@gmail.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
+('P006', 'Charles', 'L', 'Jl. P. Diponegoro No. 89', '081399919232', '1980-04-12', 'G', 'charles@gmail.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
+('P007', 'Merry', 'P', 'Jl. Kaliurang KM. 6 No. 80', '08125656989', '1978-05-16', 'G', 'merry@gmail.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
+('P008', 'Meiliana', 'P', 'Jl. Sukarno Hatta No. 78B', '08164918722', '1986-04-04', 'S', 'meiliana@gmail.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
 
 -- ---------------------------------------------------------
 -- 2. TABEL YANG PUNYA FOREIGN KEY
